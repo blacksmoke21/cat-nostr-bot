@@ -1,0 +1,1 @@
+# Nostr bot for posting cat pics
