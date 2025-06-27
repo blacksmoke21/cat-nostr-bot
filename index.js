@@ -38,7 +38,6 @@ async function publishEvent(catPicUrl) {
 // cron job to post every 2 hours
 const job = scheduleJob("0 */2 * * *", async () => {
   const catPicUrl = await getRandomCatPic();
-  console.log(catPicUrl);
   await publishEvent(catPicUrl);
 });
 
